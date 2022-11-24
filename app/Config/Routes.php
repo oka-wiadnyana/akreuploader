@@ -138,6 +138,7 @@ $routes->group('pengaturan/', static function ($routes) {
     $routes->post('insert_ip', [Pengaturan::class, 'insert_ip']);
     $routes->post('insert_ip/(:any)', [Pengaturan::class, 'insert_ip']);
     $routes->post('hapus_ip', [Pengaturan::class, 'hapus_ip']);
+    $routes->post('hapus_akun', [Pengaturan::class, 'hapus_akun']);
 });
 
 $routes->group('home', static function ($routes) {
